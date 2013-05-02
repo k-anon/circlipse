@@ -51,12 +51,6 @@
                 coeffMatrix[max] = coeffMatrix[i];
                 coeffMatrix[i] = tmp;
             }
-
-            /* The pivot element along the upper matrix diagonal
-             * (U[i][i]) was effectively pre-calculated during partial
-             * pivoting.
-             */
-            coeffMatrix[i][i] = pivot;
             
             // Calculate lower matrix values for the bounding column by
             // dividing the predetermined dividend by the pivot value.

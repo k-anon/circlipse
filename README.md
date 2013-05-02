@@ -1,8 +1,9 @@
-Circlipse for Adobe Illustrator v.1.0
-=====================================
+Circlipse v.1.0, for Adobe Illustrator
+======================================
 
-**Circlipse** is a script for Adobe Illustrator that enables quick and precise
-drawing of ellipses and circles. It is inspired by
+**Circlipse** is an Illustrator script that enables quick and precise
+drawing of ellipses and circles, even when a traced ellipse is partly
+obscured. It is inspired by
 [a cool Inkscape plugin](http://pernsteiner.org/inkscape/ellipse_5pts/)
 and is intended for
 [similar uses](http://www.youtube.com/watch?v=NAl3WJBT8Z8).
@@ -20,8 +21,8 @@ How to Use
 2. Start (or restart) Illustrator and open the target document. Save
    any work, just in case!
 3. Set the stroke and fill properties you want.
-4. With the Pen Tool, plot either three plots for a circle or five for an
-   ellipse, with each point lying at the outline of the path desired.
+4. With the Pen Tool, plot either three anchor points for a circle or five
+   for an ellipse, with each point lying at the outline of the path desired.
 5. Select File -> Scripts -> circlipse. If the script calculates the
    ellipse or circle correctly, you're done! Otherwise, pay close
    attention to any alert messages.
