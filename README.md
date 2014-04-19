@@ -31,6 +31,13 @@ Further Development
 -------------------
 
 This script may be useful for other Adobe products, so if requested, I can
-attempt making it run elsewhere. This script was tested with CS5.1, so
-please report any breaking on CS6 or elsewhere. Edge cases are likely, so
-please report them.
+attempt making it run elsewhere.
+
+Recent Updates
+--------------
+An older version of this script was prone to failing if the top layer were
+hidden. I do not recall it being documented anywhere, but the active layer
+has properties in the API similar to that of the document itself. Thus, the
+current layer is now manipulated directly in lieu of adding an ellipse to
+the top layer as was happening before, which should improve workflow. I have
+also added the MIT license and confirmed on my copy of CS6 a while back.

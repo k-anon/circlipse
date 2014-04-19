@@ -1,4 +1,4 @@
-/**
+/** 
  * Circlipse: Ellipse-From-5-Points and Circle-From-3-Points for Illustrator
  * -------------------------------------------------------------------------
  * Given a path with five anchor points, draws an ellipse passing through all
@@ -321,7 +321,8 @@
      */
     function main() {
         var currDoc = app.activeDocument,
-            inputPath = app.activeDocument.selection[0],
+            inputPath = currDoc.selection[0],
+            currLayer = currDoc.activeLayer,
             ellipse,
             ellipseProp,
             circleProp,
@@ -338,7 +339,7 @@
                 
                 if (ellipseProp) {
                     // Draw the matching ellipse.
-                    ellipse = currDoc.pathItems.ellipse(
+                    ellipse = currLayer.pathItems.ellipse(
                         ellipseProp.yOrigin + ellipseProp.halfHeight,
                         ellipseProp.xOrigin - ellipseProp.halfWidth,
                         ellipseProp.width,
@@ -360,7 +361,7 @@
                 
                 if (circleProp) {
                     // Because circles are ellipses, too!
-                    ellipse = currDoc.pathItems.ellipse(
+                    ellipse = currLayer.pathItems.ellipse(
                         circleProp.yOrigin + circleProp.radius,
                         circleProp.xOrigin - circleProp.radius,
                         circleProp.diameter,
